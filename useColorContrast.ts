@@ -14,13 +14,6 @@ export enum ColorVersion {
   rgb = 'rgb',
 }
 
-interface IUseColorContrastProps {
-  background: string;
-  colorType: ColorVersion;
-  foreground: string;
-  ratioType: ContrastType;
-}
-
 const hexToRgb = (hex: string) => {
   const result = RGB_REGEX.exec(hex);
 
