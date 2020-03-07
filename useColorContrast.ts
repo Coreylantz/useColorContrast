@@ -83,8 +83,8 @@ const checkValidColor = (color: string) =>
 export const useColorContrast = (
   foreground: string,
   background: string,
-  colorType = ColorVersion.hex,
-  ratioType = ContrastType.normalText,
+  colorType: ColorVersion = ColorVersion.hex,
+  ratioType: ContrastType = ContrastType.normalText,
 ) => {
   const [isMeetsContrast, setIsMeetsContrast] = useState(false);
 
