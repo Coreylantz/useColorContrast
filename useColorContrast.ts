@@ -15,13 +15,13 @@ export enum ColorVersion {
 }
 
 const hexToRgb = (hex: string) => {
-  const result = RGB_REGEX.exec(hex);
+  const rgbArray = RGB_REGEX.exec(hex);
 
-  const rgb = result
+  const rgb = rgbArray
     ? [
-        parseInt(result[1], 16),
-        parseInt(result[2], 16),
-        parseInt(result[3], 16),
+        parseInt(rgbArray[1], 16),
+        parseInt(rgbArray[2], 16),
+        parseInt(rgbArray[3], 16),
       ]
     : null;
 
